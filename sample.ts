@@ -10,7 +10,7 @@ const agent = new BskyAgent({
   service: "https://bsky.social",
 });
 
-Deno.cron("auto post", "5 * * * *", async () => {
+Deno.cron("auto post", "*/2 * * * *", async () => {
   //ログイン
   try {
     await agent.login({
