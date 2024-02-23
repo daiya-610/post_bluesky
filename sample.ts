@@ -27,6 +27,8 @@ Deno.cron("auto post", "2 * * * *", async () => {
     text: Math.random().toString(),
     createdAt: new Date().toISOString(),
   });
+
+  console.log("投稿したよ");
 });
 
 // const now = new Date().toISOString();
